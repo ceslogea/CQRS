@@ -1,0 +1,17 @@
+c:\Users\celso.bernar\Documents\Api\Hotel.Api.Domain\bin\Debug\net8.0\Hotel.Api.Domain.deps.json
+c:\Users\celso.bernar\Documents\Api\Hotel.Api.Domain\bin\Debug\net8.0\Hotel.Api.Domain.dll
+c:\Users\celso.bernar\Documents\Api\Hotel.Api.Domain\bin\Debug\net8.0\Hotel.Api.Domain.pdb
+c:\Users\celso.bernar\Documents\Api\Hotel.Api.Domain\bin\Debug\net8.0\Hotel.Api.Contracts.dll
+c:\Users\celso.bernar\Documents\Api\Hotel.Api.Domain\bin\Debug\net8.0\Infrastructure.dll
+c:\Users\celso.bernar\Documents\Api\Hotel.Api.Domain\bin\Debug\net8.0\Hotel.Api.Contracts.pdb
+c:\Users\celso.bernar\Documents\Api\Hotel.Api.Domain\bin\Debug\net8.0\Infrastructure.pdb
+c:\Users\celso.bernar\Documents\Api\Hotel.Api.Domain\obj\Debug\net8.0\Hotel.Api.Domain.csproj.AssemblyReference.cache
+c:\Users\celso.bernar\Documents\Api\Hotel.Api.Domain\obj\Debug\net8.0\Hotel.Api.Domain.GeneratedMSBuildEditorConfig.editorconfig
+c:\Users\celso.bernar\Documents\Api\Hotel.Api.Domain\obj\Debug\net8.0\Hotel.Api.Domain.AssemblyInfoInputs.cache
+c:\Users\celso.bernar\Documents\Api\Hotel.Api.Domain\obj\Debug\net8.0\Hotel.Api.Domain.AssemblyInfo.cs
+c:\Users\celso.bernar\Documents\Api\Hotel.Api.Domain\obj\Debug\net8.0\Hotel.Api.Domain.csproj.CoreCompileInputs.cache
+c:\Users\celso.bernar\Documents\Api\Hotel.Api.Domain\obj\Debug\net8.0\Hotel.Ap.AD69B037.Up2Date
+c:\Users\celso.bernar\Documents\Api\Hotel.Api.Domain\obj\Debug\net8.0\Hotel.Api.Domain.dll
+c:\Users\celso.bernar\Documents\Api\Hotel.Api.Domain\obj\Debug\net8.0\refint\Hotel.Api.Domain.dll
+c:\Users\celso.bernar\Documents\Api\Hotel.Api.Domain\obj\Debug\net8.0\Hotel.Api.Domain.pdb
+c:\Users\celso.bernar\Documents\Api\Hotel.Api.Domain\obj\Debug\net8.0\ref\Hotel.Api.Domain.dll

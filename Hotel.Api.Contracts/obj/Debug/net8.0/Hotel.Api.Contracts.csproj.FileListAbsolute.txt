@@ -1,0 +1,12 @@
+c:\Users\celso.bernar\Documents\Api\Hotel.Api.Contracts\bin\Debug\net8.0\Hotel.Api.Contracts.deps.json
+c:\Users\celso.bernar\Documents\Api\Hotel.Api.Contracts\bin\Debug\net8.0\Hotel.Api.Contracts.dll
+c:\Users\celso.bernar\Documents\Api\Hotel.Api.Contracts\bin\Debug\net8.0\Hotel.Api.Contracts.pdb
+c:\Users\celso.bernar\Documents\Api\Hotel.Api.Contracts\obj\Debug\net8.0\Hotel.Api.Contracts.csproj.AssemblyReference.cache
+c:\Users\celso.bernar\Documents\Api\Hotel.Api.Contracts\obj\Debug\net8.0\Hotel.Api.Contracts.GeneratedMSBuildEditorConfig.editorconfig
+c:\Users\celso.bernar\Documents\Api\Hotel.Api.Contracts\obj\Debug\net8.0\Hotel.Api.Contracts.AssemblyInfoInputs.cache
+c:\Users\celso.bernar\Documents\Api\Hotel.Api.Contracts\obj\Debug\net8.0\Hotel.Api.Contracts.AssemblyInfo.cs
+c:\Users\celso.bernar\Documents\Api\Hotel.Api.Contracts\obj\Debug\net8.0\Hotel.Api.Contracts.csproj.CoreCompileInputs.cache
+c:\Users\celso.bernar\Documents\Api\Hotel.Api.Contracts\obj\Debug\net8.0\Hotel.Api.Contracts.dll
+c:\Users\celso.bernar\Documents\Api\Hotel.Api.Contracts\obj\Debug\net8.0\refint\Hotel.Api.Contracts.dll
+c:\Users\celso.bernar\Documents\Api\Hotel.Api.Contracts\obj\Debug\net8.0\Hotel.Api.Contracts.pdb
+c:\Users\celso.bernar\Documents\Api\Hotel.Api.Contracts\obj\Debug\net8.0\ref\Hotel.Api.Contracts.dll

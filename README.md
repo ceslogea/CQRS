@@ -1,11 +1,23 @@
-# CQRS Demo
+# Markdown Support for Visual Studio Code <!-- omit in toc -->
 
-[![version](https://img.shields.io/vscode-marketplace/v/yzhang.markdown-all-in-one.svg?style=flat-square&label=vscode%20marketplace)](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one)
-[![installs](https://img.shields.io/vscode-marketplace/d/yzhang.markdown-all-in-one.svg?style=flat-square)](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one)
-[![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/yzhang-gh/vscode-markdown/main.yml?style=flat-square&branch=master)](https://github.com/yzhang-gh/vscode-markdown/actions)
-[![GitHub stars](https://img.shields.io/github/stars/yzhang-gh/vscode-markdown.svg?style=flat-square&label=github%20stars)](https://github.com/yzhang-gh/vscode-markdown)
-[![GitHub Contributors](https://img.shields.io/github/contributors/yzhang-gh/vscode-markdown.svg?style=flat-square)](https://github.com/ceslogea/CQRS/graphs/contributors)
+<p align="center">
 
+<a href="https://github.com/ceslogea/CQRS/fork" target="blank">
+<img src="https://img.shields.io/github/forks/ceslogea/CQRS?style=flat-square" alt="forks"/>
+</a>
+<a href="https://github.com/ceslogea/CQRS/stargazers" target="blank">
+<img src="https://img.shields.io/github/stars/ceslogea/CQRS?style=flat-square" alt="stars"/>
+</a>
+<a href="https://github.com/ceslogea/CQRS/issues" target="blank">
+<img src="https://img.shields.io/github/issues/ceslogea/CQRS?style=flat-square" alt="issues"/>
+</a>
+<a href="https://github.com/ceslogea/CQRS/pulls" target="blank">
+<img src="https://img.shields.io/github/issues-pr/ceslogea/CQRS?style=flat-square" alt="pull-requests"/>
+</a>
+<a href="https://github.com/ceslogea/CQRS/contributors" target="blank">
+<img src="https://img.shields.io/github/contributors/ceslogea/CQRS?style=flat-square" alt="contributors"/>
+</a>
+</p>
 Lorem Ipsum has been the industry's (keyboard shortcuts, table of contents, auto preview and more).
 
 ***Note***: Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled [official documentation](https://code.visualstudio.com/docs/languages/markdown) for more information.

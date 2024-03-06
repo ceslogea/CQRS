@@ -20,7 +20,7 @@
 </p>
 Lorem Ipsum has been the industry's (keyboard shortcuts, table of contents, auto preview and more).
 
-***Note***: Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled [official documentation](https://code.visualstudio.com/docs/languages/markdown) for more information.
+***Note***: Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled
 
 **Table of Contents**
 

@@ -1,6 +1,7 @@
+using MassTransit;
+
 namespace Hotel.Query.Consumers
 {
-    using MassTransit;
 
     public class HotelQueryApiCreatedConsumerDefinition :
         ConsumerDefinition<HotelCreatedQueryApiConsumer>

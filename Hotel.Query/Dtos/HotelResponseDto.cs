@@ -1,4 +1,4 @@
-using Infrastructure.Data.Entities;
+using Hotel.Query.Data;
 
 namespace Hotel.Query.Dtos;
 
@@ -24,7 +24,7 @@ public class HotelResponseDto
 
     public required AddressresponseDto Address { get; set; }
 
-    public static HotelResponseDto CreateFromQueryResult(IHotelEntity hotelEntity)
+    public static HotelResponseDto CreateFromQueryResult(HotelEntity hotelEntity)
     {
         return new HotelResponseDto
             {

@@ -1,7 +1,6 @@
 using MassTransit;
 using Hotel.Query.Data;
-using Hotel.Api.Contracts.Events;
-using Infrastructure.Data.Entities;
+using Events.Contracts;
 
 namespace Hotel.Query.Consumers
 {
@@ -25,7 +24,7 @@ namespace Hotel.Query.Consumers
             await db.SaveChangesAsync();
         }
 
-         private static HotelEntity MapToEntity(ConsumeContext<IHotelCreatedEvent> context)
+        private static HotelEntity MapToEntity(ConsumeContext<IHotelCreatedEvent> context)
         {
             return new HotelEntity
             {
@@ -38,7 +37,7 @@ namespace Hotel.Query.Consumers
                 ParkingIncluded = context.Message.ParkingIncluded,
                 LastRenovationDate = context.Message.LastRenovationDate,
                 Rating = context.Message.Rating,
-                Address = new Address
+                Address = new AddressEntity
                 {
                     Id = context.Message.Address.Id,
                     StreetAddress = context.Message.Address.StreetAddress,

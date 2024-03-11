@@ -1,6 +1,5 @@
 using Hotel.Query.Data;
 using Hotel.Query.Dtos;
-using Infrastructure.Data.Entities;
 using Microsoft.EntityFrameworkCore;
 
 public class HotelQueryService : IHotelQueryService
@@ -21,7 +20,7 @@ public class HotelQueryService : IHotelQueryService
     public async Task<IResult> GetHotel(int id)
     {
         return await db.Hotels.FindAsync(id)
-            is IHotelEntity hotel
+            is HotelEntity hotel
                 ? TypedResults.Ok(HotelResponseDto.CreateFromQueryResult(hotel))
                 : TypedResults.NotFound();
     }

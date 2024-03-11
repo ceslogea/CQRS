@@ -1,4 +1,4 @@
-# Markdown Support for Visual Studio Code <!-- omit in toc -->
+# Etc Visual Studio Code <!-- omit in toc -->
 
 <p align="center">
 
@@ -24,18 +24,19 @@ Lorem Ipsum has been the industry's (keyboard shortcuts, table of contents, auto
 
 **Table of Contents**
 
-- [Solution Architecture](#solution-architecture)
-- [Code Structure](#code-structure)
-- [Technology Infrastructure](#technology-infrastructure)
-- [Design Patterns and Development Practices](#design-patterns-and-development-practices)
-- [Security and Compliance](#security-and-compliance)
-- [Scalability and Performance](#scalability-and-performance)
+  - [Solution Architecture](#solution-architecture)
+  - [Code Structure](#code-structure)
+  - [Technology Infrastructure](#technology-infrastructure)
+  - [Design Patterns and Development Practices](#design-patterns-and-development-practices)
+  - [Security and Compliance](#security-and-compliance)
+  - [Scalability and Performance](#scalability-and-performance)
   - [Maintenance and Support](#maintenance-and-support)
-- [Table Ex 1](#table-ex-1)
-- [Table Ex 2](#table-ex-2)
-- [Changelog](#changelog)
-- [Contributing](#contributing)
-- [Related](#related)
+  - [Table Ex 1](#table-ex-1)
+  - [Table Ex 2](#table-ex-2)
+  - [Changelog](#changelog)
+  - [Backlog](#backlog)
+  - [Contributing](#contributing)
+  - [Related](#related)
 
 ## Solution Architecture
 
@@ -127,7 +128,6 @@ is simply dummy text of the printing and typesetting industry. Lorem Ipsum has b
 | `markdown.extension.toc.slugifyMode`                       | `github`   | Slugify mode for TOC link generation (`vscode`, `github`, `gitlab` or `gitea`)                   |
 | `markdown.extension.toc.omittedFromToc`                    | `{}`       | Lists of headings to omit by project file (e.g. `{ "README.md": ["# Introduction"] }`)           |
 | `markdown.extension.toc.levels`                            | `1..6`     | Control the heading levels to show in the table of contents.                                     |
-| `markdown.extension.toc.orderedList`                       | `false`    | Use ordered list in the table of contents.                                                       |
 | `markdown.extension.toc.plaintext`                         | `false`    | Just plain text.                                                                                 |
 | `markdown.extension.toc.unorderedList.marker`              | `-`        | Use `-`, `*` or `+` in the table of contents (for unordered list)                                |
 | `markdown.extension.toc.updateOnSave`                      | `true`     | Automatically update the table of contents on save.                                              |
@@ -135,6 +135,21 @@ is simply dummy text of the printing and typesetting industry. Lorem Ipsum has b
 </details>
 
 ## Changelog
+
+
+## Backlog
+
+<details>
+<summary>Backlog</summary>
+
+| Feature | Status |
+| -- | -- | 
+| Add a Function with add or update entries | Not Started |
+| Finish Crud REST | Not Started |
+| Add OData | Wip |
+| Add Azure Search | Not Started |
+| Add Sync Db on seed | Not Started |
+| Add a Function with add or update entries | Not Started |
 
 
 ## Contributing

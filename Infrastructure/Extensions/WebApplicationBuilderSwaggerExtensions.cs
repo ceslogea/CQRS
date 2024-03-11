@@ -8,7 +8,10 @@ public static class WebApplicationBuilderSwaggerExtensions
     public static WebApplicationBuilder AddSwagger(this WebApplicationBuilder builder)
     {
         builder.Services.AddEndpointsApiExplorer();
-        builder.Services.AddSwaggerGen();
+        builder.Services.AddSwaggerGen(c =>
+        {
+            // c.OperationFilter<ODataParametersSwaggerDefinition>();
+        });
         return builder;
     }
 }

@@ -1,4 +1,6 @@
-namespace Hotel.Api.Contracts.Events;
+using Events.Contracts;
+
+namespace Hotel.Api.Domain.Events;
 
 public class AddressCreatedEvent : IAddressCreatedEvent
 {

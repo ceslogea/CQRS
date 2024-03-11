@@ -1,5 +1,4 @@
 using Microsoft.EntityFrameworkCore;
-using Infrastructure.Data.Entities;
 
 namespace Hotel.Query.Data;
 

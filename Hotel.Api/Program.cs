@@ -1,33 +1,62 @@
 using CustomInitializer.Telemetry;
-using Hotel.Api.Contracts;
-using Hotel.Api.Data;
-using Hotel.Api.Domain;
-using Hotel.Api.Services;
+using Hotel.Api.Application;
+using Hotel.Api.Application.Interfaces;
+using Hotel.Api.Infrastructure.Data;
+using Hotel.Application.Contracts;
 using Infrastructure.Extensions;
 using MassTransit;
 using Microsoft.ApplicationInsights.Extensibility;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
 builder.UseMassTransit(typeof(Program).Assembly);
-builder.Services.AddDbContext<HotelContext>(opt => opt.UseInMemoryDatabase("InMemoryDatabase"));
+
+builder.Services.AddDbContext<ApplicationDbContext>((sp, options) =>
+{
+    // options.AddInterceptors(sp.GetServices<ISaveChangesInterceptor>());
+    options.UseInMemoryDatabase("InMemoryDatabase");
+});
+
+builder.Services.AddScoped<IApplicationDbContext>(provider => provider.GetRequiredService<ApplicationDbContext>());
+
 builder.Services.AddApplicationInsightsTelemetry();
 builder.Services.AddSingleton<ITelemetryInitializer, MyTelemetryInitializer>();
-builder.AddSwagger();
 
-builder.Services.AddScoped<IHotelRepository, HotelRepository>();
+builder.AddSwagger();
 builder.Services.AddTransient<IHotelService, HotelService>();
 
 var app = builder.Build();
 
-RouteGroupBuilder hotel = app.MapGroup("/hotel").WithOpenApi();
+await SeedData(app);
 
-hotel.MapPost("/", async (IHotelService service, [FromBody] CreateHotelDTO createHotelDTO) => await service.CreateHotelAsync(createHotelDTO));
-hotel.MapDelete("/{id}", async (IHotelService service, Guid id) => await service.DeleteHotel(id))
+RouteGroupBuilder hotel = app.MapGroup("/hotel").WithOpenApi();
+hotel.MapPost("/", CreateTodoItem);
+hotel.MapDelete("/{id}", DeleteHotel)
    .Produces(StatusCodes.Status204NoContent);
 
 app.AddSwagger();
 app.UseHttpsRedirection();
 app.Run();
+
+async Task<IResult> CreateTodoItem(IHotelService service, CreateHotelDTO createHotelDTO, CancellationToken cancellationToken)
+{
+    return await service.CreateHotelAsync(createHotelDTO, cancellationToken);
+}
+
+async Task<IResult> DeleteHotel(IHotelService service, Guid id, CancellationToken cancellationToken)
+{
+    return await service.DeleteHotel(id, cancellationToken);
+}
+
+static async Task SeedData(WebApplication app)
+{
+    using (var scope = app.Services.CreateScope())
+    {
+        var services = scope.ServiceProvider;
+        var hotelService = services.GetRequiredService<IHotelService>();
+
+        foreach (var data in CreateHotelDTO.GenerateFakeHotels(5))
+            await hotelService.CreateHotelAsync(data, new CancellationTokenSource(TimeSpan.FromMinutes(2)).Token);
+    }
+}
